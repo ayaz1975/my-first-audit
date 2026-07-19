@@ -1,0 +1,19 @@
+# Isolated Foundry project for the L1Staking audit PoCs.
+# Run from THIS directory: `cd audit/L1Staking && forge test`
+# Dependencies are vendored by ./vendor.sh (see README.md); they are NOT
+# committed — remappings below point at ./vendor/.
+[profile.default]
+src = "src"
+test = "test"
+out = "out"
+libs = []
+cache_path = "cache"
+auto_detect_solc = true
+evm_version = "istanbul"
+optimizer = true
+optimizer_runs = 200
+remappings = [
+    "@openzeppelin/contracts/=vendor/openzeppelin-3.4.2/contracts/",
+    "@graphprotocol/interfaces/=vendor/graphprotocol/packages/interfaces/",
+    "@gp/=vendor/graphprotocol/packages/contracts/contracts/",
+]

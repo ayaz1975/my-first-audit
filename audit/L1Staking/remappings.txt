@@ -1,0 +1,3 @@
+@openzeppelin/contracts/=vendor/openzeppelin-3.4.2/contracts/
+@graphprotocol/interfaces/=vendor/graphprotocol/packages/interfaces/
+@gp/=vendor/graphprotocol/packages/contracts/contracts/

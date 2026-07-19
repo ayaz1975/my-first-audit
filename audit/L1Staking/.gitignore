@@ -1,0 +1,4 @@
+# Vendored dependencies (fetched by ./vendor.sh) and build output are not committed.
+vendor/
+out/
+cache/
